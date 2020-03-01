@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<AnchorPane prefHeight="754.0" prefWidth="1303.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.gui.Main">
+    <children>
+        <GridPane alignment="TOP_CENTER" layoutX="88.0" layoutY="78.0">
+            <children>
+                <SplitPane fx:id="labelSplitPane" dividerPositions="0.4979919678714859" mouseTransparent="true" prefHeight="0.0" prefWidth="500.0">
+                    <items>
+                  <FlowPane alignment="CENTER">
+                     <children>
+                              <Label accessibleRole="TEXT_AREA" alignment="CENTER" contentDisplay="CENTER" nodeOrientation="LEFT_TO_RIGHT" text="入力" />
+                     </children>
+                  </FlowPane>
+                  <FlowPane alignment="CENTER">
+                     <children>
+                              <Label accessibleRole="TEXT_AREA" alignment="CENTER" contentDisplay="CENTER" text="output" textAlignment="CENTER" />
+                     </children>
+                  </FlowPane>
+                    </items>
+                </SplitPane>
+
+
+                <SplitPane fx:id="textAreaSplitPane" dividerPositions="0.5" prefHeight="579.0" prefWidth="1128.0" GridPane.rowIndex="1">
+                    <items>
+                        <TextArea fx:id="inputTextArea" prefWidth="563.0" promptText="input" />
+                        <TextArea fx:id="outputTextArea" prefWidth="247.0" promptText="output" />
+                    </items>
+                </SplitPane>
+            </children>
+         <columnConstraints>
+            <ColumnConstraints />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints />
+            <RowConstraints />
+         </rowConstraints>
+        </GridPane>
+      <Button fx:id="changeStateButton" layoutX="79.0" layoutY="29.0" mnemonicParsing="false" onAction="#switchAction" text="Button" />
+      <Button fx:id="changeSceneButton" layoutX="328.0" layoutY="29.0" mnemonicParsing="false" onAction="#goToSub" text="Button" />
+
+
+    </children>
+</AnchorPane>
